@@ -1,13 +1,15 @@
 # README for Username Validation Script
 
 ## Author Information
-- **Name:** [Your Full Name]
-- **Course:** [Course Number and Name]
+- Sheney Cornejo-Pineda
+- CPSC 298_01
 - **Assignment:** Maxscore Assignment
-- **Date:** [Date of Completion]
+- **Date:** 11-10-2025
 
 ## Program Description
-[Write 2-3 sentences in your own words describing what this script does and its purpose. Explain the problem it solves and how it works at a high level.]
+Maxscore.sh reads five positive integers from user input and determines which one is the highest.
+It then calculates and displays how much each number differs from that highest value.
+The script helps users quickly compare a set of scores or values to identify the maximum and understand how far the others are from it.
 
 ## Usage
 To run the script interactively:
@@ -21,15 +23,16 @@ To test with the provided input file:
 ```
 
 ## How the Script Works
-[Explain in 3-5 sentences how your script works. Include information about:]
-- How you read and store numbers in an array
-- How you loop through the array to find the maximum value
-- How you calculate and display the difference between each score and the highest
+The script first prompts the user to enter five positive integers, which are read one by one and stored in a Bash array.
+The first number entered is used to initialize the highest score.
+As the remaining scores are read in a loop, each one is compared to the current max, and if a higher number is found, max is updated. 
+After all inputs are collected, the script loops through the array again to calculate how much each score differs from the highest. 
+Finally, it displays the highest score and each score’s difference from that maximum value.
 
 ## Testing Results
-[Describe your testing process and results. Include:]
-- Example successful inputs and results
-- How you used the maxscore-input file to test
+I tested this program with various input sets to confirm accuracy.
+For example, when given the scores 1, 77, 9, 6, and 56, the output correctly identified 77 as the highest score and displayed each score’s difference from it
+The maxscore-input file was used to automatically feed test data into the script using the command ./maxscore.sh < maxscore-input, producing consistent and correct results without requiring manual input.
 
 ## Challenges and Solutions
 [Optional: Describe any challenges you encountered while creating this script and how you solved them. This could include debugging issues, arrays, or Git workflow problems.]
